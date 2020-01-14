@@ -6,7 +6,11 @@
 				"navigationBarTitleText": "首页"
 			}
 		}
-	],
+	    ,{
+            "path" : "pages/detail/detail",
+            "style" : {"navigationBarTitleText": "考团详情"}
+        }
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "明志考团",

@@ -1,0 +1,17 @@
+
+.blank{
+	height: 80rpx;
+}
+.foot{
+	position: fixed;
+	bottom: 0;
+	width: 750rpx;
+	height: 80rpx;
+	background-color: #4CD964;
+	color: #FFFFFF;
+	line-height: 80rpx;
+	font-size: 36rpx;
+	text-align: center;
+}
+
+

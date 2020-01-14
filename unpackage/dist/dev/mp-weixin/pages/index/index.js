@@ -142,7 +142,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
 
 
 
@@ -170,7 +170,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 
 
-var _mock = _interopRequireDefault(__webpack_require__(/*! ../../mock/mock.js */ 21));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _uniCard = function _uniCard() {return __webpack_require__.e(/*! import() | node-modules/@dcloudio/uni-ui/lib/uni-card/uni-card */ "node-modules/@dcloudio/uni-ui/lib/uni-card/uni-card").then(__webpack_require__.bind(null, /*! @dcloudio/uni-ui/lib/uni-card/uni-card */ 24));};var title = function title() {return __webpack_require__.e(/*! import() | components/title */ "components/title").then(__webpack_require__.bind(null, /*! ../../components/title.vue */ 31));};var _default =
+var _mock = _interopRequireDefault(__webpack_require__(/*! ../../mock/mock.js */ 21));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _uniCard = function _uniCard() {return __webpack_require__.e(/*! import() | node-modules/@dcloudio/uni-ui/lib/uni-card/uni-card */ "node-modules/@dcloudio/uni-ui/lib/uni-card/uni-card").then(__webpack_require__.bind(null, /*! @dcloudio/uni-ui/lib/uni-card/uni-card */ 32));};var title = function title() {return __webpack_require__.e(/*! import() | components/title */ "components/title").then(__webpack_require__.bind(null, /*! ../../components/title.vue */ 39));};var _default =
 {
   components: { uniCard: _uniCard, title: title },
   data: function data() {
@@ -183,7 +183,13 @@ var _mock = _interopRequireDefault(__webpack_require__(/*! ../../mock/mock.js */
     this.swiper = _mock.default.swiper;
     this.kaotuanList = _mock.default.kaotuanList;
   },
-  methods: {} };exports.default = _default;
+  methods: {
+    goDetail: function goDetail() {
+      uni.navigateTo({
+        url: '../detail/detail' });
+
+    } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 /* 21 */,

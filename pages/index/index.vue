@@ -9,7 +9,7 @@
 		</swiper>
 		<title title='SAT考团'></title>
 		<view v-for="(item,index) in kaotuanList" :key='index'>
-			<uni-card  mode='style' :title='item.title' note='true' :extra='item.desc' :thumbnail='item.image' >
+			<uni-card  mode='style' :title='item.title' note='true' :extra='item.desc' :thumbnail='item.image' @click='goDetail()'>
 			<template v-slot:footer>
 				<view class="uni-card-footer">
 					<view class="uni-card-text" v-for='(childItem,childIndex) in item.note' :key='childIndex'>
@@ -40,7 +40,11 @@
 			this.kaotuanList=mock.kaotuanList;
 		},
 		methods: {
-
+			goDetail(){
+				uni.navigateTo({
+					url:'../detail/detail'
+				})
+			}
 		}
 	}
 </script>
