@@ -6,8 +6,8 @@
 					<image :src="item.image"></image>
 				</view>
 			</swiper-item>
-			
 		</swiper>
+		<title title='SAT考团'></title>
 		<view v-for="(item,index) in kaotuanList" :key='index'>
 			<uni-card  mode='style' :title='item.title' note='true' :extra='item.desc' :thumbnail='item.image' >
 			<template v-slot:footer>
@@ -25,9 +25,10 @@
 
 <script>
 	import {uniCard} from '@dcloudio/uni-ui';
+	import title from '../../components/title.vue';
 	import mock from '../../mock/mock.js';
 	export default {
-		components:{uniCard},
+		components:{uniCard,title},
 		data() {
 			return {
 				swiper:[],
@@ -35,7 +36,6 @@
 			}
 		},
 		onLoad() {
-			console.log(mock)
 			this.swiper=mock.swiper;
 			this.kaotuanList=mock.kaotuanList;
 		},
