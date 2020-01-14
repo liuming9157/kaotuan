@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "index-uni-card-default": "/pages/index/index-uni-card-default",
+    "uni-card": "/node-modules/@dcloudio/uni-ui/lib/uni-card/uni-card"
+  }
+}

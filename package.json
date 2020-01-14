@@ -1,0 +1,17 @@
+{
+  "name": "kaotuan",
+  "version": "1.0.0",
+  "description": "mini program for mingzhi kaotuan",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "kaotuan"
+  ],
+  "author": "Jack Liu",
+  "license": "ISC",
+  "dependencies": {
+    "@dcloudio/uni-ui": "^1.1.5"
+  }
+}

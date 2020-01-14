@@ -1,0 +1,17 @@
+
+.uni-card-image{
+	width: 100%;
+}
+.uni-card-footer{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+}
+.uni-card-text{
+	font-size: 24rpx;
+}
+
+
