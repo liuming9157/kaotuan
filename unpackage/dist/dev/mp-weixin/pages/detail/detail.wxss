@@ -1,9 +1,9 @@
 
-.head-image{
+.head-image {
 	width: 750rpx;
 	height: 350rpx;
 }
-.detail{
+.detail {
 	margin: 0 30rpx;
 	width: 690rpx;
 	border-bottom: dashed 1rpx #999999;
@@ -12,18 +12,16 @@
 	display: flex;
 	padding: 15rpx 0;
 }
-.detail-title{
+.detail-title {
 	width: 200rpx;
 	font-size: 30rpx;
 	color: #808080;
 }
-.detail-content{
+.detail-content {
 	width: 490rpx;
 	font-size: 30rpx;
-	-webkit-box-flex:1;
-	-webkit-flex:1;
-	        flex:1
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	        flex: 1
 }
-
-
 

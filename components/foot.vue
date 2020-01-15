@@ -21,7 +21,7 @@
 		methods:{
 			apply(){
 				uni.navigateTo({
-					url:''
+					url:'/pages/contact/contact'
 				})
 			}
 		}

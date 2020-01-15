@@ -1,7 +1,11 @@
 <script>
 	export default {
+		globalData:{
+			kaotuanList:[],
+			swiper:[]
+		},
 		onLaunch: function() {
-			console.log('App Launch')
+			
 		},
 		onShow: function() {
 			console.log('App Show')

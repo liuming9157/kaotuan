@@ -1,0 +1,1 @@
+<view><view class="blank"></view><view data-event-opts="{{[['tap',[['apply',['$event']]]]]}}" class="foot" bindtap="__e">我要报名</view></view>

@@ -67,9 +67,18 @@
         "usingComponents" : true
     },
     "mp-baidu" : {
-        "usingComponents" : true
+        "usingComponents" : true,
+        "appid" : "18212033"
     },
     "mp-toutiao" : {
         "usingComponents" : true
+    },
+    "mp-qq" : {
+        "setting" : {
+            "es6" : true,
+            "minified" : true,
+            "postcss" : true
+        },
+        "appid" : "1109728398"
     }
 }

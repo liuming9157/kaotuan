@@ -1,4 +1,7 @@
 
+.swiper-image{
+	width: 750rpx;
+}
 .uni-card-image{
 	width: 100%;
 }

@@ -1,0 +1,1 @@
+.head-image{width:750rpx;height:350rpx}.detail{margin:0 30rpx;width:690rpx;border-bottom:dashed 1rpx #999;display:-webkit-box;display:-webkit-flex;display:flex;padding:15rpx 0}.detail-title{width:200rpx;font-size:30rpx;color:grey}.detail-content{width:490rpx;font-size:30rpx;-webkit-box-flex:1;-webkit-flex:1;flex:1}

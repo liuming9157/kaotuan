@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "考团详情",
+  "component": true,
+  "usingComponents": {
+    "title2": "/components/title2",
+    "foot": "/components/foot"
+  }
+}
