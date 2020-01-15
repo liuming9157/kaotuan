@@ -26,16 +26,14 @@
 
 			}
 		},
-		onLoad() {
-			console.log('contact show')
-		},
+		onLoad() {},
 		methods: {
 			addWeixin() {
 				uni.setClipboardData({
 					data: 'liuming9157',
 					success() {
 						uni.showToast({
-							title:'复制成功'
+							title: '复制成功'
 						})
 					}
 				})
@@ -67,5 +65,6 @@
 		background-color: #4CD964;
 		color: #FFFFFF;
 		border-radius: 15upx;
+		text-align: center;
 	}
 </style>

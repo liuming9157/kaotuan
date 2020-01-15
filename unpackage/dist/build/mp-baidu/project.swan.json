@@ -1,11 +1,1 @@
-{
-  "appid": "18212033",
-  "appInfo": {},
-  "appkey": "",
-  "condition": {},
-  "setting": {
-    "urlCheck": true
-  },
-  "libVersion": "",
-  "projectname": "kaotuan"
-}
+{"appInfo":{},"appid":"18212033","appkey":"","condition":{},"developType":"normal","editor":{"curPath":"/Users/JackLiu/Desktop/kaotuan/unpackage/dist/build/mp-baidu/app.json","expands":[],"markdownUploadTimeMap":{},"paths":["/Users/JackLiu/Desktop/kaotuan/unpackage/dist/build/mp-baidu/app.json"],"recentlyFiles":["/Users/JackLiu/Desktop/kaotuan/unpackage/dist/build/mp-baidu/app.json"]},"host":"baiduboxapp","libVersion":"","projectname":"kaotuan","publish":{"version":"1.0.1.0"},"setting":{"urlCheck":true},"swan":{"baiduboxapp":{"extensionJsVersion":"1.5.4","swanJsVersion":"3.100.23"}}}
