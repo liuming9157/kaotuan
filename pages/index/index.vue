@@ -68,6 +68,7 @@
 <style>
 	.swiper-image{
 		width: 750upx;
+		height:100% ;
 	}
 	.uni-card-image{
 		width: 100%;
