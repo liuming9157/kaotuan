@@ -58,11 +58,50 @@
 			}
 		},
 		onLoad(options) {
-			let id=options.id;
-			this.detail = getApp().globalData.kaotuanList.find(item => item.id==id);
+			let id = options.id;
+			this.detail = getApp().globalData.kaotuanList.find(item => item.id == id);
 			console.log(this.detail)
 		},
 		methods: {
+
+		},
+
+		onShow() {
+			// #ifdef MP-BAIDU
+			swan.setPageInfo({
+				title: this.detail.title+'-明志教育',
+				keywords: '明志,明志教育,考团,SAT,ACT,韩国考团,日本考团,新加坡考团,美国考团,洛杉矶考团,香港考团,吉隆坡考团',
+				description: '明志教育专业SAT、ACT考团，美国洛杉矶考团，日本东京考团，韩国首尔考团，香港考团，新加坡考团，马来西亚吉隆坡考团，入驻四星级以上酒店，小考场舒适轻松，全程教师送考',
+				articleTitle: '2020年明志考团给您最专业的服务！',
+				releaseDate: '2019-01-02 12:01:30',
+				image: [
+					'https://promotion.mzsat.cn/uploads/sin.jpeg',
+					'https://promotion.mzsat.cn/uploads/tokyo.jpeg',
+					'https://promotion.mzsat.cn/uploads/kl.jpeg'
+				],
+				visit: {
+					pv: '1000',
+					uv: '100',
+					sessionDuration: '130'
+				},
+				likes: '75',
+				comments: '13',
+				collects: '23',
+				shares: '8',
+				followers: '35',
+				success: res => {
+					console.log(this.detail.title);
+				},
+				fail: err => {
+					console.log('setPageInfo fail', err);
+				}
+			})
+			// #endif
+
+
+		},
+
+		onShareAppMessage() {
 
 		}
 	}
