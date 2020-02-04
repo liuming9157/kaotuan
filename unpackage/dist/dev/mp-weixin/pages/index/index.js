@@ -142,7 +142,66 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _uniCard = function _uniCard() {return __webpack_require__.e(/*! import() | node-modules/@dcloudio/uni-ui/lib/uni-card/uni-card */ "node-modules/@dcloudio/uni-ui/lib/uni-card/uni-card").then(__webpack_require__.bind(null, /*! @dcloudio/uni-ui/lib/uni-card/uni-card */ 39));};var title = function title() {return __webpack_require__.e(/*! import() | components/title */ "components/title").then(__webpack_require__.bind(null, /*! ../../components/title.vue */ 46));};
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _uniPopup = function _uniPopup() {return __webpack_require__.e(/*! import() | node-modules/@dcloudio/uni-ui/lib/uni-popup/uni-popup */ "node-modules/@dcloudio/uni-ui/lib/uni-popup/uni-popup").then(__webpack_require__.bind(null, /*! @dcloudio/uni-ui/lib/uni-popup/uni-popup */ 39));};var _uniGridItem = function _uniGridItem() {return __webpack_require__.e(/*! import() | node-modules/@dcloudio/uni-ui/lib/uni-grid-item/uni-grid-item */ "node-modules/@dcloudio/uni-ui/lib/uni-grid-item/uni-grid-item").then(__webpack_require__.bind(null, /*! @dcloudio/uni-ui/lib/uni-grid-item/uni-grid-item */ 46));};var _uniGrid = function _uniGrid() {return __webpack_require__.e(/*! import() | node-modules/@dcloudio/uni-ui/lib/uni-grid/uni-grid */ "node-modules/@dcloudio/uni-ui/lib/uni-grid/uni-grid").then(__webpack_require__.bind(null, /*! @dcloudio/uni-ui/lib/uni-grid/uni-grid */ 53));};var _uniCard = function _uniCard() {return __webpack_require__.e(/*! import() | node-modules/@dcloudio/uni-ui/lib/uni-card/uni-card */ "node-modules/@dcloudio/uni-ui/lib/uni-card/uni-card").then(__webpack_require__.bind(null, /*! @dcloudio/uni-ui/lib/uni-card/uni-card */ 60));};var title = function title() {return __webpack_require__.e(/*! import() | components/title */ "components/title").then(__webpack_require__.bind(null, /*! ../../components/title.vue */ 67));};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -178,7 +237,13 @@ __webpack_require__.r(__webpack_exports__);
 
 //import mock from '../../mock/mock.js';
 var _default = {
-  components: { uniCard: _uniCard, title: title },
+  components: {
+    uniCard: _uniCard,
+    title: title,
+    uniGrid: _uniGrid,
+    uniGridItem: _uniGridItem,
+    uniPopup: _uniPopup },
+
   data: function data() {
     return {
       swiper: [],
@@ -186,6 +251,7 @@ var _default = {
 
   },
   onLoad: function onLoad() {
+    // this.$refs.popup.open();
     var that = this;
     uni.request({
       url: 'https://promotion.mzsat.cn/api/kaotuan/index',
@@ -204,7 +270,45 @@ var _default = {
       uni.navigateTo({
         url: "../detail/detail?id=".concat(id) });
 
-    } } };exports.default = _default;
+    } },
+
+  onShow: function onShow() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  },
+  onShareAppMessage: function onShareAppMessage() {
+
+  } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),

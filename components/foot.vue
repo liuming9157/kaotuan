@@ -30,16 +30,16 @@
 
 <style>
 	.blank{
-		height: 80upx;
+		height: 100upx;
 	}
 	.foot{
 		position: fixed;
 		bottom: 0;
 		width: 750upx;
-		height: 80upx;
+		height: 100upx;
 		background-color: #4CD964;
 		color: #FFFFFF;
-		line-height: 80upx;
+		line-height: 100upx;
 		font-size: 36upx;
 		text-align: center;
 	}

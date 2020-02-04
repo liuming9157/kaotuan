@@ -1,11 +1,21 @@
 {
-  "appid": "18212033",
-  "appInfo": {},
-  "appkey": "",
-  "condition": {},
-  "setting": {
-    "urlCheck": true
-  },
-  "libVersion": "",
-  "projectname": "kaotuan"
+    "appInfo": {},
+    "appid": "18212033",
+    "appkey": "",
+    "condition": {},
+    "host": "baiduboxapp",
+    "libVersion": "",
+    "projectname": "kaotuan",
+    "publish": {
+        "version": "1.0.1.0"
+    },
+    "setting": {
+        "urlCheck": true
+    },
+    "swan": {
+        "baiduboxapp": {
+            "swanJsVersion": "3.150.6",
+            "extensionJsVersion": "1.10.2"
+        }
+    }
 }

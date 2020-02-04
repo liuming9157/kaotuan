@@ -7,6 +7,57 @@
 				</view>
 			</swiper-item>
 		</swiper>
+		<uni-grid :column="4">
+			<uni-grid-item>
+				<image class='grid-image' src="https://cdn.mzyun.tech/kao.png" mode=""></image>
+				<view class="grid-text">
+					香港
+				</view>
+			</uni-grid-item>
+			<uni-grid-item>
+				<image class='grid-image' src="https://cdn.mzyun.tech/de.png" mode=""></image>
+				<view class="grid-text">
+					新加坡
+				</view>
+			</uni-grid-item>
+			<uni-grid-item>
+				<image class='grid-image' src="https://cdn.mzyun.tech/quan.png" mode=""></image>
+				<view class="grid-text">
+					马来西亚
+				</view>
+			</uni-grid-item>
+			<uni-grid-item>
+				<image class='grid-image' src="https://cdn.mzyun.tech/hui.png" mode=""></image>
+				<view class="grid-text">
+					越南
+				</view>
+			</uni-grid-item>
+			<uni-grid-item>
+				<image class='grid-image' src="https://cdn.mzyun.tech/meng.png" mode=""></image>
+				<view class="grid-text">
+					泰国
+				</view>
+			</uni-grid-item>
+			<uni-grid-item>
+				<image class='grid-image' src="https://cdn.mzyun.tech/de.png" mode=""></image>
+				<view class="grid-text">
+					韩国
+				</view>
+			</uni-grid-item>
+			<uni-grid-item>
+				<image class='grid-image' src="https://cdn.mzyun.tech/quan.png" mode=""></image>
+				<view class="grid-text">
+					日本
+				</view>
+			</uni-grid-item>
+			<uni-grid-item>
+				<image class='grid-image' src="https://cdn.mzyun.tech/dui.png" mode=""></image>
+				<view class="grid-text">
+					美国
+				</view>
+			</uni-grid-item>
+
+		</uni-grid>
 		<title title='SAT考团'></title>
 		<view v-for="(item,index) in kaotuanList" :key='index'>
 			<uni-card mode='style' :title='item.title' note='true' :extra='item.desc' :thumbnail='item.image' @click='goDetail(item.id)'>
@@ -25,20 +76,29 @@
 				</template>
 			</uni-card>
 		</view>
-
+		<!-- <uni-popup ref='popup' type="center">
+			<image class="popup-image" src="https://promotion.mzsat.cn/uploads/20191216/5921b53515035b2084609c33a10d8fdf.jpeg"
+			 mode=""></image>
+		</uni-popup> -->
 	</view>
 </template>
 
 <script>
 	import {
-		uniCard
+		uniCard,
+		uniGrid,
+		uniGridItem,
+		uniPopup
 	} from '@dcloudio/uni-ui';
 	import title from '../../components/title.vue';
 	//import mock from '../../mock/mock.js';
 	export default {
 		components: {
 			uniCard,
-			title
+			title,
+			uniGrid,
+			uniGridItem,
+			uniPopup
 		},
 		data() {
 			return {
@@ -47,6 +107,7 @@
 			}
 		},
 		onLoad() {
+			// this.$refs.popup.open();
 			let that = this;
 			uni.request({
 				url: 'https://promotion.mzsat.cn/api/kaotuan/index',
@@ -113,6 +174,19 @@
 		height: 350upx;
 	}
 
+	.grid-image {
+		width: 100upx;
+		height: 100upx;
+		border-radius: 50%;
+		margin: 20upx auto;
+
+	}
+
+	.grid-text {
+		text-align: center;
+		font-size: 24upx;
+	}
+
 	.uni-card-image {
 		width: 100%;
 	}
@@ -124,5 +198,10 @@
 
 	.uni-card-text {
 		font-size: 24upx;
+	}
+
+	.popup-image {
+		width: 500upx;
+		height: 700upx;
 	}
 </style>

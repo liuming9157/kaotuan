@@ -133,7 +133,24 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var title2 = function title2() {return __webpack_require__.e(/*! import() | components/title2 */ "components/title2").then(__webpack_require__.bind(null, /*! ../../components/title2.vue */ 53));};var foot = function foot() {return __webpack_require__.e(/*! import() | components/foot */ "components/foot").then(__webpack_require__.bind(null, /*! ../../components/foot.vue */ 60));};
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var title2 = function title2() {return __webpack_require__.e(/*! import() | components/title2 */ "components/title2").then(__webpack_require__.bind(null, /*! ../../components/title2.vue */ 74));};var foot = function foot() {return __webpack_require__.e(/*! import() | components/foot */ "components/foot").then(__webpack_require__.bind(null, /*! ../../components/foot.vue */ 81));};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -194,10 +211,62 @@ var _default = {
   },
   onLoad: function onLoad(options) {
     var id = options.id;
-    this.detail = getApp().globalData.kaotuanList.find(function (item) {return item.id == id;});
+    var detail = {};
+    detail = getApp().globalData.kaotuanList.find(function (item) {return item.id == id;});
+    detail.agenda = detail.agenda.split('|');
+    detail.visa = detail.visa.split('|');
+    detail.fee = detail.fee.split('|');
+    detail.others = detail.others.split('|');
+    this.detail = detail;
     console.log(this.detail);
   },
-  methods: {} };exports.default = _default;
+  methods: {},
+
+
+
+  onShow: function onShow() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  },
+
+  onShareAppMessage: function onShareAppMessage() {
+    return {
+      title: "\u660E\u5FD7".concat(this.detail.title, "\u6B22\u8FCE\u60A8"),
+      imageUrl: "".concat(this.detail.image),
+      desc: '让你考高分的考团' };
+
+
+  } };exports.default = _default;
 
 /***/ }),
 

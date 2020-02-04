@@ -14,7 +14,7 @@
 }
 .detail-title {
 	width: 200rpx;
-	font-size: 30rpx;
+	font-size:15rpx 30rpx;
 	color: #808080;
 }
 .detail-content {
@@ -23,5 +23,15 @@
 	-webkit-box-flex: 1;
 	-webkit-flex: 1;
 	        flex: 1
+}
+.agenda {
+	margin: 30rpx;
+	width: 690rpx;
+	font-size: 30rpx;
+}
+.detail-images{
+	margin: 30rpx;
+	width: 690rpx;
+	height: 500rpx;
 }
 

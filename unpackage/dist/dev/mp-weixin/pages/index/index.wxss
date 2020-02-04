@@ -1,11 +1,22 @@
 
-.swiper-image{
+.swiper-image {
 	width: 750rpx;
+	height: 350rpx;
 }
-.uni-card-image{
+.grid-image {
+	width: 100rpx;
+	height: 100rpx;
+	border-radius: 50%;
+	margin: 20rpx auto;
+}
+.grid-text {
+	text-align: center;
+	font-size: 24rpx;
+}
+.uni-card-image {
 	width: 100%;
 }
-.uni-card-footer{
+.uni-card-footer {
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: flex;
@@ -13,8 +24,11 @@
 	-webkit-justify-content: space-between;
 	        justify-content: space-between;
 }
-.uni-card-text{
+.uni-card-text {
 	font-size: 24rpx;
 }
-
+.popup-image {
+	width: 500rpx;
+	height: 700rpx;
+}
 
